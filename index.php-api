@@ -1,0 +1,10 @@
+<?php
+
+require 'flight/Flight.php';
+require '../DAO.php';
+Flight::route('GET /studenti', function() {
+    $dao = new DAO();
+    echo json_encode($dao->getLast10());
+});
+Flight::start();
+?>
