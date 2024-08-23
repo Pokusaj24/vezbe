@@ -1,0 +1,10 @@
+Kreirati bazu sa tabelom Student sa poljima ime, prosek i ručno popuniti nekoliko Studenata u bazu, 					(05 bodova)
+Kreirati Student DAO klasu sa metodama:			(10 bodova)
+o	void insertStudent (String ime, float prosek): ubacuje novog studenta u bazu 
+o	getLast10 (): vraca poslednjih 10 studenta iz baze							
+Kreirati index  sa formom za prosleđivanje parametara ime i prosek na  Kontroler pomoću tabele. 					(05 bodova)
+Kreirati  Kontroler koji u : 					(10 bodova)
+o	doPost sa prosleđenim parametrima ubacuje u bazu novog studenta i nakon toga učitava poslednjih 10 studenta iz baze i prosledjuje ih preko sesije na  view , u suprotnom vraća odgovarajuće poruke na index 
+o	doGet radi „LOGOUT“ i poništava sesiju i vraća klijenta na index  						
+Kreirati  view   prikazuje listu Studenta u tabeli preko SESIJE ako postoji sesija, u suptrotnom radi se se redirekcija na index  (10 bodova)
+Povezani DAO,  KONTROLER i VIEW koji rade 
